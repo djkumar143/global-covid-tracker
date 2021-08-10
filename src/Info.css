@@ -1,0 +1,42 @@
+.info{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:400;
+    margin:1rem;
+}
+
+.global-report{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    padding:1rem;
+    background-color: var(--color-2);
+    border-radius:5px;
+}
+
+.global-reportHeading{
+    padding:1rem 0;
+}
+
+.global-reportHeading>h2{
+    font-weight:400;
+    font-size:25px;
+
+}
+
+.global-reportInfo{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.group{
+    padding:1rem;
+}
+
+.report-info{
+    padding:0.5rem 0;
+}
+
+
+

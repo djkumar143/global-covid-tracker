@@ -1,0 +1,42 @@
+nav{
+    background-color: var(--color-1);
+    width:auto;
+    height:auto;
+    position:sticky;
+    z-index:10;
+    top:0;
+    padding:1rem 1rem 2rem 1rem;
+    box-shadow:2px 4px 4px  var(--color-1);
+    margin-bottom:1rem;
+
+}
+nav:hover{
+    box-shadow: 3px 5px 5px var(--color-1);
+}
+
+
+nav>h2{
+    font-weight:700;
+    color:#fff;
+    letter-spacing:0.1rem;
+}
+
+@media screen and (max-width:480px){
+    nav{
+        text-align: center;
+        padding:auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

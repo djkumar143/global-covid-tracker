@@ -1,0 +1,94 @@
+:root{
+    --color-1:#26619c;
+    --color-2:#32abe2;
+    --color-3:#37c2ed;
+    --color-off-white:#faf6f1;
+}
+
+.country-data{
+    background-color: var(--color-3);
+    padding:1rem;
+    margin:1rem;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius:5px;
+}
+
+.country-dataHeading{
+    padding:1rem;
+}
+
+.country-dataHeading>h2{
+    margin:auto;
+    font-size:25px;
+    font-weight:bolder;
+    color:var(--color-off-white);
+}
+
+.country-selection{
+   display:flex;
+   flex-direction:column;
+}
+
+.country-selection>h3{
+    font-weight:600;
+    font-size:20px;
+    padding:1rem;
+}
+
+.country-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.country-list>select{
+    margin:1rem;
+    padding:0.5rem;
+    border-radius:5px;
+    border:none;
+    width:225px;
+    background-color: var(--color-1);
+    color:#fff;
+}
+
+.country-list>button{
+    height:33px;
+    width:80px;
+    cursor:pointer;
+    margin:auto;
+    border-radius:5px;
+    background-color:green;
+    color:#fff;
+    font-weight:700;
+    font-size:15px;
+    border:none;
+    border:2px solid darkgreen
+}
+
+.global-reportInfo{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.group{
+    padding:1rem;
+}
+
+.report-info{
+    padding:0.5rem 0;
+}
+
+.no-results{
+    margin:auto;
+    padding:2rem 1rem 4rem 1rem;
+    letter-spacing:0.1rem;
+    font-size:22px;
+}

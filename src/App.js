@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React  ,{useState,useEffect} from 'react';
+import Nav from './Nav';
+import './App.css'
+import Info from './Info';
+import axios from 'axios'
+import CountryData from './CountryData';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const url = 'https://api.covid19api.com/summary'
+
+const App = () =>{
+    const [data, setData] = useState([]);
+
+    const fetchData = async () => {
+        try {
+            const response = await axios(url)
+            setData(response.data)
+        } catch (error) {
+            console.warn(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+
+    return(
+        <div className="app">
+           <Nav/>
+           <Info data={data} />
+           <CountryData data={data}/>
+        </div>
+    )
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
